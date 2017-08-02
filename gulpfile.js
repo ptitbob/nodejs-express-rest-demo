@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
 const JSON_FILES = ['src/*.json', 'src/**/*.json'];
+const TS_FILE = "src/**/*.ts";
 
 // Intégrer la configuration typescript au projet
 const tsProject = ts.createProject('tsconfig.json');
@@ -20,7 +21,7 @@ gulp.task('json-files', () => {
 
 // Tache de surveillance des sources et au cas ou compilation de celle-ci.
 gulp.task('watch', () => {
-    gulp.watch("src/**/*.ts", ['typescript']);
+    gulp.watch(TS_FILE, ['typescript']);
     gulp.watch(JSON_FILES, ['json-files'])
 })
 
