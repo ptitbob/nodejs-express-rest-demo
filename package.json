@@ -1,0 +1,16 @@
+{
+  "name": "rest-02",
+  "version": "1.0.0",
+  "description": "Application de demonstration NodeJS/ExpressJS pour exposer une API REST",
+  "main": "index.js",
+  "author": "ptitbob",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.36",
+    "gulp": "^3.9.1",
+    "typescript": "^2.4.2"
+  }
+}
